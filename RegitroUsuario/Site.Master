@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="RegitroUsuario.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%:Page.Title%>Evolution Fitnes</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <%--barra de Menu principal--%>
+
+       <%-- <div class="row">
+            <div class="col-md-12" style="background-color: #039BE5; top: 0px; left: 0px; height: 72px;">
+                <h3 style="font: Freestyle Script; text-align: center; height: 60px; color: blanchedalmond;"
+                    class="card-header text-white text-center bg-primary">Pagina principal</h3>
+                
+
+            </div>
+
+        </div>--%>
+
+
+        <%-- Pagina principal --%>
+   <%--     <div class="row">
+            <div>
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/default.aspx">Evolition Fitness</a>
+                        </div>
+
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/Registros/RegistroUsuarios.aspx"><span class="glyphicon glyphicon-book"></span>Registros</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/Consultas/ConsultasUsuarios.aspx"><span class="glyphicon glyphicon-list-alt"></span>Consultas</a></li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+            </div>
+        </div>--%>
+
+
+        <%--contenedor y pie de pagina--%>
+        <div class=" container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Copyright Evolution Fitness</p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>
