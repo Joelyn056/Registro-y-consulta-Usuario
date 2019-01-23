@@ -77,7 +77,7 @@
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Registros\rUsuarios.aspx" />
-    <Content Include="Resources\1.png" />
+    <Content Include="Resources\1.jpg" />
     <Content Include="Resources\2.jpg" />
     <Content Include="Resources\logo.png" />
     <Content Include="Scripts\jquery-3.3.1.js" />

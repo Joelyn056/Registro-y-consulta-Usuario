@@ -14,11 +14,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <style type="text/css">
-        .auto-style2 {
-            font-size: 30pt;
-        }
-    </style>
+   
 
 </head>
 <body>
@@ -44,7 +40,7 @@
                 <div class="collapse navbar-collapse" id="options">
                     <ul class="navbar-nav w-100 justify-content-center">
                         <li class="nav-item">
-                            <a href="./" class="nav-link">Home</a>
+                            <a href="/default.aspx" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Registros</a>
