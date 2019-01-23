@@ -14,48 +14,54 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-
+    <style type="text/css">
+        .auto-style2 {
+            font-size: 30pt;
+        }
+    </style>
 
 </head>
 <body>
     <form id="form1" runat="server">
 
-        <%--barra de Menu principal--%>
-
-       <%-- <div class="row">
-            <div class="col-md-12" style="background-color: #039BE5; top: 0px; left: 0px; height: 72px;">
-                <h3 style="font: Freestyle Script; text-align: center; height: 60px; color: blanchedalmond;"
-                    class="card-header text-white text-center bg-primary">Pagina principal</h3>
-                
-
-            </div>
-
-        </div>--%>
-
-
-        <%-- Pagina principal --%>
-   <%--     <div class="row">
-            <div>
-
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="/default.aspx">Evolition Fitness</a>
-                        </div>
-
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="/Registros/RegistroUsuarios.aspx"><span class="glyphicon glyphicon-book"></span>Registros</a></li>
-                        </ul>
-
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="/Consultas/ConsultasUsuarios.aspx"><span class="glyphicon glyphicon-list-alt"></span>Consultas</a></li>
-                        </ul>
-
-                    </div>
-
-                </nav>
+        
+         <%--barra con leyenda menu principal--%>
+        <%--<div class="row">
+            <div class="col-md-12" style="background-color: #039BE5; top: 0px; left: 0px; height: 72px; margin-bottom: 0px;">
+                <h3 style="font-family: Freestyle Script; text-align: center; height: 60px; color: blanchedalmond;" class="auto-style2"><strong></strong></h3>
             </div>
         </div>--%>
+
+        <%--menu principal--%>
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#options">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="options">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a href="./" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Registros</a>
+                            <div class="dropdown-menu">
+                                <a href="/Registros/rUsuarios.aspx" class="dropdown-item">Usuarios</a>                              
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Consultas</a>
+                            <div class="dropdown-menu">
+                                <a href="/Consultas/cUsuarios.aspx" class="dropdown-item">Usuarios</a>                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
         <%--contenedor y pie de pagina--%>

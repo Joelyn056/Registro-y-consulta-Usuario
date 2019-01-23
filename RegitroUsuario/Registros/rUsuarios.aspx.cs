@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using BLL;
 using Entidades;
+using RegitroUsuario.Utilidades;
+
 
 namespace RegitroUsuario.Registros
 {
@@ -13,27 +15,27 @@ namespace RegitroUsuario.Registros
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if(!Page.IsPostBack)
-            //{
-            //    //LlenaCombo
-            //    //int id = Utils.ToInt(Request.QueryString["id"]);
-            //    //if (id > 0)
-            //    {
-            //        RepositorioBase<Usuarios> repositorio = new RepositorioBase<Usuarios>();
-            //        //var categoria = repositorio.Buscar/*(id)*/;
+            if (!Page.IsPostBack)
+            {
+               // LlenaCombo
+                int id = Utils.ToInt(Request.QueryString["id"]);
+                if (id > 0)
+                {
+                    RepositorioBase<Usuarios> repositorio = new RepositorioBase<Usuarios>();
+                    var categoria = repositorio.Buscar(id);
 
-            //        if (categoria == null)
-            //        {
-            //            MostrarMensaje(TiposMensaje.Error, "Registro no encontrado");
+                    if (categoria == null)
+                    {
+                        MostrarMensaje(TiposMensaje.Error, "Registro no encontrado");
 
-            //        }
-            //        else
-            //        {
-            //            LlenaCampos(categoria);
-            //        }
-            //    }       
-            //}
-            
+                    }
+                    else
+                    {
+                        LlenaCampos(categoria);
+                    }
+                }
+            }
+
         }
 
         protected void NuevoButton_Click(object sender, EventArgs e)

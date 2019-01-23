@@ -16,22 +16,19 @@
         <div class="form-horizontal col-md-12" role="form">
 
             <%--UsuarioID--%>
-            <div class="form-group">
-                <label for="UsuarioIdTextBox" class="col-md-3 control-label input-sm" style="font-size: medium">UsuarioId</label>
+            <div class="form-group row">
+                <label for="UsuarioIdTextBox" class="col-md-5 control-label input-sm" style="font-size: medium">UsuarioId</label>
                 <div class="col-md-1 col-sm-2 col-xs-4">
                     <asp:TextBox ID="UsuarioIdTextBox" runat="server" placeholder="0" class="form-control input-sm" Style="font-size: medium"></asp:TextBox>
                 </div>
-
                 <div class="col-md-1 col-sm-2 col-xs-4">
                     <asp:Button ID="BuscarButton" runat="server" Text="Buscar" class="btn btn-primary btn-md" OnClick="BuscarButton_Click" />
                 </div>
             </div>
-           
-
         </div>
 
         <%--Nombres--%>
-        <div class="form-group">
+        <div class="form-group row">
             <label for="NombresTextBox" class="col-md-3 control-label input-sm" style="font-size: medium">Nombres</label>
             <div class="col-md-8">
                 <asp:TextBox ID="NombresTextBox" runat="server" class="form-control input-sm" Style="font-size: medium"></asp:TextBox>
@@ -41,7 +38,7 @@
 
 
         <%--Nombre de usuario--%>
-        <div class="form-group">
+        <div class="form-group row">
             <label for="NombreUsuarioTextBox" class="col-md-3 control-label input-sm" style="font-size: medium">Nombre de usuario</label>
             <div class="col-md-8">
                 <asp:TextBox ID="NombreUsuarioTextBox" runat="server" class="form-control input-sm" Style="font-size: medium"></asp:TextBox>
@@ -51,7 +48,7 @@
 
 
         <%--Contraseña--%>
-        <div class="form-group">
+        <div class="form-group row">
             <label for="ContraseñaTextBox" class="col-md-3 control-label input-sm" style="font-size: medium">Contraseña</label>
             <div class="col-md-8">
                 <asp:TextBox ID="ContraseñaTextBox" runat="server" class="form-control input-sm" Style="font-size: medium"></asp:TextBox>
@@ -61,7 +58,7 @@
 
 
         <%--Confirmar Contraseña--%>
-        <div class="form-group">
+        <div class="form-group row">
             <label for="ConfirmarContraseñaTextBox" class="col-md-3 control-label input-sm" style="font-size: medium">Confirmar Contraseña</label>
             <div class="col-md-8">
                 <asp:TextBox ID="ConfirmarContraseñaTextBox" runat="server" class="form-control input-sm" Style="font-size: medium"></asp:TextBox>
@@ -71,7 +68,7 @@
 
 
         <%--Cargo--%>
-        <div class="form-group">
+        <div class="form-group row">
             <label for="CargoDropDownList" class="col-md-3 control-label input-sm" style="font-size: medium">Cargo</label>
             <div class="col-md-8">
                 <asp:DropDownList ID="CargoDropDownList" runat="server" Class="form-control input-sm" Style="font-size: medium">
@@ -98,7 +95,7 @@
         <asp:Label ID="ErrorLabel" runat="server" Text=""></asp:Label>
     </div>
 
-    </div>
+
 
 </asp:Content>
 
